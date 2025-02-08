@@ -1,6 +1,6 @@
 let
   pkgs = import <nixpkgs> { };
-  build = pkgs.callPackage ./appengine-python-standard.nix {
+  build = pkgs.callPackage ./build.nix {
     buildPythonPackage = pkgs.python3Packages.buildPythonPackage;
   };
 in
